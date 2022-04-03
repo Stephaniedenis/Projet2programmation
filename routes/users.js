@@ -5,7 +5,7 @@ const homeController = require('./homeController');
 
 router.get("/new", homeController.getIndex);
 router.post("/new", homeController.saveUser);
-router.get("/search/:id", homeController.FindOneUser);
+router.get("/search/:code", homeController.FindOneUser);
 
 //router.get("/:id", homeController.FindOneUser);
 router.get("/", homeController.allUsers);
